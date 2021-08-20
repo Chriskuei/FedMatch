@@ -1,0 +1,48 @@
+{
+    data_dir: [
+        'data/processed/medquad',
+        'data/processed/privacy',
+        'data/processed/bioasq',
+        'data/processed/fiqa',
+        'data/processed/inqa_small',
+    ],
+    output_dir: 'private/lr_8',
+    metric: 'mrr',
+    watch_metrics: ['map'],
+
+    bert: {
+        bert_config: 'configs/bert/private/lr_8.json',
+        init_checkpoint: 'checkpoint/bert-base-uncased-official/pytorch_model.bin',
+        droput: 0.2,
+    },
+
+    routine: {
+        log_per_samples: [64, 128, 256, 512, 256],
+        eval_per_samples: [640, 1280, 2560, 5120, 2560],
+        eval_per_samples_warmup: [40000, 40000, 40000, 40000, 40000],
+        eval_warmup_samples: [0, 0, 0, 0, 0], // after this many steps warmup mode for eval ends
+        tolerance_samples: [25600000, 25600000, 25600000, 25600000, 25600000],
+        eval_epoch: true,
+        min_samples: [0, 0, 0, 0, 0], // train at least these many steps, not affected by early stopping
+    },
+
+    optim: {
+        lr: 2e-5,
+        min_lr: 0,
+        lr_decay_rate: 1.0,
+        warmup_steps: [142, 180, 454, 1338, 360],
+        t_total: [1420, 1800, 4540, 13380, 3600],
+        batch_size: [12, 32, 32, 32, 32]
+    },
+
+    fed: {
+        round: 11,
+        fed_type: 'fed_vertical',
+        sample: 'all'
+    },
+
+    epochs: [1, 1, 1, 1, 1],
+
+    max_len1: [25, 10, 15, 10, 10],
+    max_len2: [480, 40, 50, 100, 100],
+}

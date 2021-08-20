@@ -1,0 +1,10 @@
+/data/*
+!/data/*.py
+/models/
+/resources/
+/pred/
+
+/.idea
+__pycache__/
+.DS_Store
+checkpoint

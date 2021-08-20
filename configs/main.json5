@@ -1,0 +1,74 @@
+[
+    {
+        name: 'benchmark',
+        __parents__: [
+            'default',
+            'data/private/lr_32',
+        ],
+        __repeat__: 2,
+        eval_file: 'test',
+    },
+    {
+        name: 'benchmark',
+        __parents__: [
+            'default',
+            'data/private/lr_64',
+        ],
+        __repeat__: 2,
+        eval_file: 'test',
+    },
+    {
+        name: 'benchmark',
+        __parents__: [
+            'default',
+            'data/private/lr_256',
+        ],
+        __repeat__: 2,
+        eval_file: 'test',
+    },
+    {
+        name: 'benchmark',
+        __parents__: [
+            'default',
+            'data/private/lr_512',
+        ],
+        __repeat__: 2,
+        eval_file: 'test',
+    },
+    {
+        name: 'benchmark',
+        __parents__: [
+            'default',
+            'data/private/lr_128',
+        ],
+        __repeat__: 2,
+        eval_file: 'test',
+    },
+    {
+        name: 'benchmark',
+        __parents__: [
+            'default',
+            'data/private/lr_16',
+        ],
+        __repeat__: 2,
+        eval_file: 'test',
+    },
+    {
+        name: 'benchmark',
+        __parents__: [
+            'default',
+            'data/private/lr_8',
+        ],
+        __repeat__: 2,
+        eval_file: 'test',
+    },
+    {
+        name: 'benchmark',
+        __parents__: [
+            'default',
+            'data/private/lr_1024',
+        ],
+        __repeat__: 2,
+        eval_file: 'test',
+    },
+]
