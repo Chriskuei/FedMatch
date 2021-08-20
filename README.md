@@ -17,5 +17,17 @@ We are excited to present our novel Federated Matching framework for QA, named F
 - [transformers](https://github.com/huggingface/transformers)
 - [simple-effective-text-matching-pytorch](https://github.com/alibaba-edu/simple-effective-text-matching-pytorch)
 
+## Citation
+If you find our work useful, please consider citing our paper:
+
+```
+@article{chen2021fedmatch,
+  title={FedMatch: Federated Learning Over Heterogeneous Question Answering Data},
+  author={Chen, Jiangui and Zhang, Ruqing and Guo, Jiafeng and Fan, Yixing and Cheng, Xueqi},
+  journal={arXiv preprint arXiv:2108.05069},
+  year={2021}
+}
+```
+
 ## License
 This project is under Apache License 2.0.
