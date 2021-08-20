@@ -14,6 +14,7 @@ We are excited to present our novel Federated Matching framework for QA, named F
 - install [PyTorch](https://pytorch.org)
 
 ## Acknowledgements
+- [transformers](https://github.com/huggingface/transformers)
 - [simple-effective-text-matching-pytorch](https://github.com/alibaba-edu/simple-effective-text-matching-pytorch)
 
 ## License
