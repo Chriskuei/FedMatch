@@ -13,6 +13,10 @@ We are excited to present our novel Federated Matching framework for QA, named F
 - `pip install -r requirements.txt`
 - install [PyTorch](https://pytorch.org)
 
+## Download
+
+- [FedQA](https://drive.google.com/file/d/1gwJwRW4PFPufht3ZYk0bUOfblId1eg_m/view?usp=sharing)
+
 ## Acknowledgements
 - [transformers](https://github.com/huggingface/transformers)
 - [simple-effective-text-matching-pytorch](https://github.com/alibaba-edu/simple-effective-text-matching-pytorch)
