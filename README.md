@@ -25,10 +25,11 @@ We are excited to present our novel Federated Matching framework for QA, named F
 If you find our work useful, please consider citing our paper:
 
 ```
-@article{chen2021fedmatch,
+@inproceedings{chen2021fedmatch,
   title={FedMatch: Federated Learning Over Heterogeneous Question Answering Data},
   author={Chen, Jiangui and Zhang, Ruqing and Guo, Jiafeng and Fan, Yixing and Cheng, Xueqi},
-  journal={arXiv preprint arXiv:2108.05069},
+  booktitle={Proceedings of the 30th ACM International Conference on Information \& Knowledge Management},
+  pages={181--190},
   year={2021}
 }
 ```
